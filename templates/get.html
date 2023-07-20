@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>get test page</h1>
+    {% if posts %}
+      {% for post in posts %}
+        <p>{{ post.author }}</p>
+        <p>{{ post.post_msg }}</p>
+        <p>{{ post.sticker.url }}</p>
+        <img src="{{ post.sticker.url }}" alt="sticker">
+        <p>{{ post.created_at }}</p>
+      {% endfor %}
+    {% endif %}
+  </body>
+
+</html>
