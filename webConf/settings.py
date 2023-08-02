@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'post',
+    'api',
     'corsheaders'
 ]
 
@@ -52,7 +52,7 @@ CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
 ]
 
-ROOT_URLCONF = 'rollingpager.urls'
+ROOT_URLCONF = 'webConf.urls'
 
 TEMPLATES = [
     {
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'rollingpager.wsgi.application'
+WSGI_APPLICATION = 'webConf.wsgi.application'
 
 
 # Database

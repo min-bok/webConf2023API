@@ -2,7 +2,7 @@ from django.urls import path, include
 from rest_framework import routers
 from .views import PostViewSet, PhotoViewSet
 
-app_name = "post"
+app_name = "api"
 router = routers.DefaultRouter()
 router.register(r'post', PostViewSet)
 router.register(r'photo', PhotoViewSet)
