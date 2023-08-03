@@ -24,6 +24,7 @@ ALLOWED_HOSTS = [
     'localhost',
     "3.35.8.66",
     "54.180.195.162:8000",
+    "weniv.github.io/guest_book_of_jejuwebconf"
 ]
 
 
@@ -55,6 +56,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = [
     "http://3.35.8.66",
     "http://54.180.195.162:8000",
+    "https://weniv.github.io/guest_book_of_jejuwebconf"
 ]
 
 ROOT_URLCONF = 'webConf.urls'
