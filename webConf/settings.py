@@ -22,7 +22,8 @@ ALLOWED_HOSTS = [
     '54.180.195.162',
     '127.0.0.1',
     'localhost',
-    'https://main--remarkable-dusk-d596ef.netlify.app/'
+    "3.35.8.66",
+    "54.180.195.162:8000",
 ]
 
 
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -48,11 +50,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware'
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000',
+    "http://3.35.8.66",
+    "http://54.180.195.162:8000",
 ]
 
 ROOT_URLCONF = 'webConf.urls'
