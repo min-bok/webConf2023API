@@ -20,7 +20,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '54.180.195.162',
-    '127.0.0.1'
+    '127.0.0.1',
+    'localhost',
+    'https://main--remarkable-dusk-d596ef.netlify.app/'
 ]
 
 
@@ -34,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'api',
+    'render',
     'corsheaders'
 ]
 
@@ -57,7 +60,7 @@ ROOT_URLCONF = 'webConf.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "templates")],
+        'DIRS': [os.path.join(BASE_DIR, "build")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,6 +122,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "build/static"
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
