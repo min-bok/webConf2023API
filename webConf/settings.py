@@ -55,7 +55,8 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = [
     "http://3.35.8.66",
     "http://54.180.195.162:8000",
-    "https://main--remarkable-dusk-d596ef.netlify.app"
+    "https://main--remarkable-dusk-d596ef.netlify.app",
+    "https://conf.weniv.co.kr/"
 ]
 
 ROOT_URLCONF = 'webConf.urls'
