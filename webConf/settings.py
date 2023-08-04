@@ -24,7 +24,7 @@ ALLOWED_HOSTS = [
     'localhost',
     "3.35.8.66",
     "54.180.195.162:8000",
-    "https://conf.weniv.co.kr"
+    "conf.weniv.co.kr"
 ]
 
 
